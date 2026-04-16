@@ -66,11 +66,11 @@ export default function About() {
                 <h3 className="text-xl font-bold text-white">Profile Summary</h3>
               </div>
               <p className="text-slate-400 leading-relaxed">
-                Results-driven full-stack developer with{' '}
+                Dedicated full-stack developer with{' '}
                 <span className="text-indigo-400 font-medium">2+ years</span> of professional experience
-                building scalable, production-grade web applications. At Global Software Solutions, shipped the{' '}
-                <span className="text-purple-400 font-medium">Torus low-code platform</span> serving{' '}
-                <span className="text-indigo-400 font-medium">500+ active users</span>, achieving a{' '}
+                building scalable, production-grade web applications. At Global Software Solutions, worked as a developer on{' '}
+                <span className="text-purple-400 font-medium">Torus</span>, a low-code platform serving{' '}
+                <span className="text-indigo-400 font-medium">500+ active users</span>, contributing to a{' '}
                 <span className="text-cyan-400 font-medium">40% reduction in page load times</span> and{' '}
                 <span className="text-cyan-400 font-medium">30% faster database queries</span>. Proficient in
                 Next.js, Nest.js, TypeScript, and multi-database architectures. Strong foundation in

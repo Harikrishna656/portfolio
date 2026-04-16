@@ -11,17 +11,17 @@ const projects = [
     id: 'torus',
     name: 'Torus',
     tagline: 'Low-Code Platform',
-    role: 'Lead Developer',
+    role: 'Developer',
     status: 'Professional',
     statusColor: 'bg-indigo-500/10 border-indigo-500/20 text-indigo-400',
     description:
-      'Enterprise-grade drag-and-drop web app builder that enables users to create full-featured web applications without deep coding knowledge. Built with a modular architecture to support dynamic form generation, role-based access control, multi-database connectors, and real-time data rendering.',
+      'Enterprise-grade drag-and-drop web app builder that enables users to create full-featured web applications without deep coding knowledge. The platform supports dynamic form generation, role-based access control, multi-database connectors, and real-time data rendering — working as a developer on this product at Global Software Solutions.',
     highlights: [
-      'Serves 500+ active users in production',
-      'Reduced page load times by 40% via Next.js optimizations',
-      'Cut database query response time by 30% using Redis caching',
-      'Decreased end-user development time by 60%',
-      'Delivered 10+ features across 3 product sprints',
+      'Platform serves 500+ active users in production',
+      'Contributed to a 40% reduction in page load times via Next.js & TypeScript optimizations',
+      'Helped achieve 30% faster database queries through Redis caching integration',
+      'Contributed to features that decreased end-user development time by 60%',
+      'Worked on 10+ features across 3 product sprints as part of the dev team',
     ],
     metrics: [
       { icon: Users, value: '500+', label: 'Active Users', color: 'text-indigo-400' },
@@ -29,7 +29,7 @@ const projects = [
       { icon: Code2, value: '60%', label: 'Dev Time Saved', color: 'text-cyan-400' },
     ],
     tech: ['Next.js', 'Nest.js', 'TypeScript', 'PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'Docker'],
-    github: 'https://github.com/Harikrishna656',
+    github: null,
     live: null,
     featured: true,
     accent: {
@@ -220,15 +220,21 @@ export default function Projects() {
                           View Live Site
                         </a>
                       )}
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 text-white text-sm font-semibold transition-all hover:-translate-y-0.5"
-                      >
-                        <Github size={15} />
-                        View on GitHub
-                      </a>
+                      {project.github ? (
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 text-white text-sm font-semibold transition-all hover:-translate-y-0.5"
+                        >
+                          <Github size={15} />
+                          View on GitHub
+                        </a>
+                      ) : (
+                        <div className="flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl border border-white/5 bg-white/3 text-slate-500 text-sm cursor-default select-none">
+                          🏢 Private Company Project
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
