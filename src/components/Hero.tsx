@@ -15,6 +15,7 @@ const floatingBadges = [
   { emoji: '⚡', title: 'Next.js', sub: 'Frontend', pos: 'absolute -top-4 -right-4', border: 'border-indigo-500/30' },
   { emoji: '🚀', title: 'Nest.js', sub: 'Backend', pos: 'absolute -bottom-4 -left-4', border: 'border-purple-500/30' },
   { emoji: '🛢️', title: '2+ Yrs', sub: 'Experience', pos: 'absolute top-1/2 -right-10', border: 'border-cyan-500/30' },
+  { emoji: '🐳', title: 'Docker', sub: 'Learning', pos: 'absolute -top-4 -left-4', border: 'border-sky-500/30' },
 ];
 
 export default function Hero() {
@@ -98,8 +99,8 @@ export default function Hero() {
           <p className="text-slate-400 text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 mb-8">
             Full-stack developer with{' '}
             <span className="text-indigo-400 font-semibold">2+ years of experience</span> building
-            scalable web applications. Shipped a production platform used by{' '}
-            <span className="text-purple-400 font-semibold">500+ users</span>, cutting load times
+            scalable web applications. Contributed to a production platform used by{' '}
+            <span className="text-purple-400 font-semibold">500+ users</span>, helping cut load times
             by <span className="text-cyan-400 font-semibold">40%</span> with Next.js &amp; Nest.js.
           </p>
 
